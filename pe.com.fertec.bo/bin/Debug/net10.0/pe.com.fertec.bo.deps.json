@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "pe.com.fertec.bo/1.0.0": {
+        "runtime": {
+          "pe.com.fertec.bo.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "pe.com.fertec.bo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

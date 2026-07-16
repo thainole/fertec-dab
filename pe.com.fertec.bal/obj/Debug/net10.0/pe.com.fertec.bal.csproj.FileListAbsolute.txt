@@ -1,0 +1,17 @@
+C:\Users\thain\Documents\ISIL\2026-1\5447-dab-lab\Fertec\Fertec\pe.com.fertec.bal\bin\Debug\net10.0\pe.com.fertec.bal.deps.json
+C:\Users\thain\Documents\ISIL\2026-1\5447-dab-lab\Fertec\Fertec\pe.com.fertec.bal\bin\Debug\net10.0\pe.com.fertec.bal.dll
+C:\Users\thain\Documents\ISIL\2026-1\5447-dab-lab\Fertec\Fertec\pe.com.fertec.bal\bin\Debug\net10.0\pe.com.fertec.bal.pdb
+C:\Users\thain\Documents\ISIL\2026-1\5447-dab-lab\Fertec\Fertec\pe.com.fertec.bal\bin\Debug\net10.0\pe.com.fertec.bo.dll
+C:\Users\thain\Documents\ISIL\2026-1\5447-dab-lab\Fertec\Fertec\pe.com.fertec.bal\bin\Debug\net10.0\pe.com.fertec.dal.dll
+C:\Users\thain\Documents\ISIL\2026-1\5447-dab-lab\Fertec\Fertec\pe.com.fertec.bal\bin\Debug\net10.0\pe.com.fertec.dal.pdb
+C:\Users\thain\Documents\ISIL\2026-1\5447-dab-lab\Fertec\Fertec\pe.com.fertec.bal\bin\Debug\net10.0\pe.com.fertec.bo.pdb
+C:\Users\thain\Documents\ISIL\2026-1\5447-dab-lab\Fertec\Fertec\pe.com.fertec.bal\obj\Debug\net10.0\pe.com.fertec.bal.csproj.AssemblyReference.cache
+C:\Users\thain\Documents\ISIL\2026-1\5447-dab-lab\Fertec\Fertec\pe.com.fertec.bal\obj\Debug\net10.0\pe.com.fertec.bal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thain\Documents\ISIL\2026-1\5447-dab-lab\Fertec\Fertec\pe.com.fertec.bal\obj\Debug\net10.0\pe.com.fertec.bal.AssemblyInfoInputs.cache
+C:\Users\thain\Documents\ISIL\2026-1\5447-dab-lab\Fertec\Fertec\pe.com.fertec.bal\obj\Debug\net10.0\pe.com.fertec.bal.AssemblyInfo.cs
+C:\Users\thain\Documents\ISIL\2026-1\5447-dab-lab\Fertec\Fertec\pe.com.fertec.bal\obj\Debug\net10.0\pe.com.fertec.bal.csproj.CoreCompileInputs.cache
+C:\Users\thain\Documents\ISIL\2026-1\5447-dab-lab\Fertec\Fertec\pe.com.fertec.bal\obj\Debug\net10.0\pe.com.f.03B0CDEC.Up2Date
+C:\Users\thain\Documents\ISIL\2026-1\5447-dab-lab\Fertec\Fertec\pe.com.fertec.bal\obj\Debug\net10.0\pe.com.fertec.bal.dll
+C:\Users\thain\Documents\ISIL\2026-1\5447-dab-lab\Fertec\Fertec\pe.com.fertec.bal\obj\Debug\net10.0\refint\pe.com.fertec.bal.dll
+C:\Users\thain\Documents\ISIL\2026-1\5447-dab-lab\Fertec\Fertec\pe.com.fertec.bal\obj\Debug\net10.0\pe.com.fertec.bal.pdb
+C:\Users\thain\Documents\ISIL\2026-1\5447-dab-lab\Fertec\Fertec\pe.com.fertec.bal\obj\Debug\net10.0\ref\pe.com.fertec.bal.dll
