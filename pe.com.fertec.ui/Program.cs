@@ -9,7 +9,7 @@ namespace pe.com.fertec.ui
         static void Main()
         {
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            Application.Run(new frmingreso());
         }
     }
 }
