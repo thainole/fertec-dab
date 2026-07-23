@@ -75,5 +75,17 @@ namespace pe.com.fertec.ui
             timer1.Enabled = true;
             timer1.Start();
         }
+
+        private void tsmiVenta_Click(object sender, EventArgs e)
+        {
+            frmventa ventana = new frmventa();
+            ventana.ShowDialog();
+        }
+
+        private void tsmiListadoVenta_Click(object sender, EventArgs e)
+        {
+            pe.com.fertec.ui.frmlistado ventanaListado = new pe.com.fertec.ui.frmlistado();
+            ventanaListado.ShowDialog();
+        }
     }
 }

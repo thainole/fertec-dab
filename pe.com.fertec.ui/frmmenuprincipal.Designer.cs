@@ -173,14 +173,16 @@
             // tsmiVenta
             // 
             tsmiVenta.Name = "tsmiVenta";
-            tsmiVenta.Size = new Size(160, 22);
+            tsmiVenta.Size = new Size(180, 22);
             tsmiVenta.Text = "Venta ";
+            tsmiVenta.Click += tsmiVenta_Click;
             // 
             // tsmiListadoVenta
             // 
             tsmiListadoVenta.Name = "tsmiListadoVenta";
-            tsmiListadoVenta.Size = new Size(160, 22);
+            tsmiListadoVenta.Size = new Size(180, 22);
             tsmiListadoVenta.Text = "Listado de Venta";
+            tsmiListadoVenta.Click += tsmiListadoVenta_Click;
             // 
             // tsmReporte
             // 
