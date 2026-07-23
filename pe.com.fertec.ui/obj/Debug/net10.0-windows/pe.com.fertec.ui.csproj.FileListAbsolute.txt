@@ -130,3 +130,14 @@ C:\Users\thain\Documents\ISIL\2026-1\5447-dab-lab\Fertec\Fertec\pe.com.fertec.ui
 C:\Users\thain\Documents\ISIL\2026-1\5447-dab-lab\Fertec\Fertec\pe.com.fertec.ui\obj\Debug\net10.0-windows\pe.com.fertec.ui.sexoFrm.resources
 C:\Users\thain\Documents\ISIL\2026-1\5447-dab-lab\Fertec\Fertec\pe.com.fertec.ui\obj\Debug\net10.0-windows\pe.com.fertec.ui.rolFrm.resources
 C:\Users\thain\Documents\ISIL\2026-1\5447-dab-lab\Fertec\Fertec\pe.com.fertec.ui\obj\Debug\net10.0-windows\pe.com.fertec.ui.tipoDocumentoFrm.resources
+C:\Users\omama\OneDrive\Escritorio\fertec-proyecto-final\pe.com.fertec.ui\obj\Debug\net10.0-windows\pe.com.fertec.ui.categoriaFrm.resources
+C:\Users\omama\OneDrive\Escritorio\fertec-proyecto-final\pe.com.fertec.ui\obj\Debug\net10.0-windows\pe.com.fertec.ui.distritoFrm.resources
+C:\Users\omama\OneDrive\Escritorio\fertec-proyecto-final\pe.com.fertec.ui\obj\Debug\net10.0-windows\pe.com.fertec.ui.marcaFrm.resources
+C:\Users\omama\OneDrive\Escritorio\fertec-proyecto-final\pe.com.fertec.ui\obj\Debug\net10.0-windows\pe.com.fertec.ui.rolFrm.resources
+C:\Users\omama\OneDrive\Escritorio\fertec-proyecto-final\pe.com.fertec.ui\obj\Debug\net10.0-windows\pe.com.fertec.ui.sexoFrm.resources
+C:\Users\omama\OneDrive\Escritorio\fertec-proyecto-final\pe.com.fertec.ui\obj\Debug\net10.0-windows\pe.com.fertec.ui.tipoDocumentoFrm.resources
+C:\Users\omama\OneDrive\Escritorio\fertec-proyecto-final\pe.com.fertec.ui\obj\Debug\net10.0-windows\pe.com.fertec.ui.clienteFrm.resources
+C:\Users\omama\OneDrive\Escritorio\fertec-proyecto-final\pe.com.fertec.ui\obj\Debug\net10.0-windows\pe.com.fertec.ui.productoFrm.resources
+C:\Users\omama\OneDrive\Escritorio\fertec-proyecto-final\pe.com.fertec.ui\obj\Debug\net10.0-windows\pe.com.fertec.ui.empleado.frmbuscarempleado.resources
+C:\Users\omama\OneDrive\Escritorio\fertec-proyecto-final\pe.com.fertec.ui\obj\Debug\net10.0-windows\pe.com.fertec.ui.empleado.frmempleado.resources
+C:\Users\omama\OneDrive\Escritorio\fertec-proyecto-final\pe.com.fertec.ui\obj\Debug\net10.0-windows\pe.com.fertec.ui.empleado.frmhabilitarempleado.resources

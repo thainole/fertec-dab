@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using pe.com.fertec.bo;
+using pe.com.fertec.ui.empleado;
 using pe.com.fertec.ui.util;
 
 namespace pe.com.fertec.ui
@@ -113,7 +114,7 @@ namespace pe.com.fertec.ui
 
         private void tsmiEmpleado_Click(object sender, EventArgs e)
         {
-            Util.AbrirFormulario<empleadoFrm>(this);
+            Util.AbrirFormulario<frmempleado>(this);
         }
 
         private void tsmiVenta_Click(object sender, EventArgs e)

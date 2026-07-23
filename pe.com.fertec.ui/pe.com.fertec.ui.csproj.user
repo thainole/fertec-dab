@@ -4,7 +4,19 @@
     <Compile Update="categoria\categoriaFrm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="cliente\clienteFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="distrito\distritoFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="empleado\frmbuscarempleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="empleado\frmempleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="empleado\frmhabilitarempleado.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="frmingreso.cs">
@@ -14,6 +26,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="marca\marcaFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="producto\productoFrm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="rol\rolFrm.cs">
