@@ -32,11 +32,6 @@ namespace pe.com.fertec.ui
             Util.empleadoactual = empleadologin;
         }
 
-        private void tsmiCategoria_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void tsmiCerrarSesion_Click(object sender, EventArgs e)
         {
             DialogResult respuesta = Util.MensajePersonalizado("¿Estas seguro que quieres cerrar sesion ?", "Menu principal", 4, 32);
@@ -74,6 +69,61 @@ namespace pe.com.fertec.ui
             timer1.Interval = 1000;
             timer1.Enabled = true;
             timer1.Start();
+        }
+
+        private void tsmiCategoria_Click(object sender, EventArgs e)
+        {
+            Util.AbrirFormulario<categoriaFrm>(this);
+        }
+
+        private void tsmiMarca_Click(object sender, EventArgs e)
+        {
+            Util.AbrirFormulario<marcaFrm>(this);
+        }
+
+        private void tsmiRol_Click(object sender, EventArgs e)
+        {
+            Util.AbrirFormulario<rolFrm>(this);
+        }
+
+        private void tsmiDistrito_Click(object sender, EventArgs e)
+        {
+            Util.AbrirFormulario<distritoFrm>(this);
+        }
+
+        private void tsmiSexo_Click(object sender, EventArgs e)
+        {
+            Util.AbrirFormulario<sexoFrm>(this);
+        }
+
+        private void tsmiTipoDocumento_Click(object sender, EventArgs e)
+        {
+            Util.AbrirFormulario<tipoDocumentoFrm>(this);
+        }
+
+        private void tsmiProducto_Click(object sender, EventArgs e)
+        {
+            // Util.AbrirFormulario<tipoDocumentoFrm>(this);
+        }
+
+        private void tsmiCliente_Click(object sender, EventArgs e)
+        {
+            // Util.AbrirFormulario<tipoDocumentoFrm>(this);
+        }
+
+        private void tsmiEmpleado_Click(object sender, EventArgs e)
+        {
+            // Util.AbrirFormulario<tipoDocumentoFrm>(this);
+        }
+
+        private void tsmiVenta_Click(object sender, EventArgs e)
+        {
+            // Util.AbrirFormulario<tipoDocumentoFrm>(this);
+        }
+
+        private void tsmiListadoVenta_Click(object sender, EventArgs e)
+        {
+            // Util.AbrirFormulario<tipoDocumentoFrm>(this);
         }
     }
 }

@@ -285,6 +285,7 @@
       },
       "pe.com.fertec.bal/1.0.0": {
         "dependencies": {
+          "pe.com.fertec.bo": "1.0.0",
           "pe.com.fertec.dal": "1.0.0"
         },
         "runtime": {

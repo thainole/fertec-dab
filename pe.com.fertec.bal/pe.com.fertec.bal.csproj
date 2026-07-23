@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\pe.com.fertec.bo\pe.com.fertec.bo.csproj" />
     <ProjectReference Include="..\pe.com.fertec.dal\pe.com.fertec.dal.csproj" />
   </ItemGroup>
 
