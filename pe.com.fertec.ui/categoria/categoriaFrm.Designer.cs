@@ -37,7 +37,6 @@
             btnNuevo = new Button();
             btnRegistrar = new Button();
             btnActualizar = new Button();
-            btnEliminar = new Button();
             btnHabilitar = new Button();
             btnSalir = new Button();
             dgvCategorias = new DataGridView();
@@ -128,19 +127,9 @@
             btnActualizar.UseVisualStyleBackColor = true;
             btnActualizar.Click += btnActualizar_Click;
             // 
-            // btnEliminar
-            // 
-            btnEliminar.Location = new Point(374, 183);
-            btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(75, 23);
-            btnEliminar.TabIndex = 10;
-            btnEliminar.Text = "Eliminar";
-            btnEliminar.UseVisualStyleBackColor = true;
-            btnEliminar.Click += btnEliminar_Click;
-            // 
             // btnHabilitar
             // 
-            btnHabilitar.Location = new Point(491, 183);
+            btnHabilitar.Location = new Point(363, 183);
             btnHabilitar.Name = "btnHabilitar";
             btnHabilitar.Size = new Size(75, 23);
             btnHabilitar.TabIndex = 11;
@@ -176,7 +165,6 @@
             Controls.Add(dgvCategorias);
             Controls.Add(btnSalir);
             Controls.Add(btnHabilitar);
-            Controls.Add(btnEliminar);
             Controls.Add(btnActualizar);
             Controls.Add(btnRegistrar);
             Controls.Add(btnNuevo);
@@ -205,7 +193,6 @@
         private Button btnNuevo;
         private Button btnRegistrar;
         private Button btnActualizar;
-        private Button btnEliminar;
         private Button btnHabilitar;
         private Button btnSalir;
         private DataGridView dgvCategorias;

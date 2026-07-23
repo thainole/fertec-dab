@@ -4,21 +4,21 @@
     <Compile Update="categoria\categoriaFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="categoria\habilitarCategoria.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="cliente\clienteFrm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="distrito\distritoFrm.cs">
       <SubType>Form</SubType>
     </Compile>
+<<<<<<< HEAD
     <Compile Update="distrito\frmbuscardistrito.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="distrito\frmhabilitardistrito.cs">
       <SubType>Form</SubType>
     </Compile>
+=======
+>>>>>>> ce610b7e67b4d3f29a5fe733ce2bacaa422ff8f2
     <Compile Update="empleado\empleadoFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -28,16 +28,10 @@
     <Compile Update="frmmenuprincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="marca\habilitarMarca.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="marca\marcaFrm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="producto\productoFrm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="rol\habilitarRol.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="rol\rolFrm.cs">

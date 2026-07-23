@@ -1,5 +1,6 @@
 using pe.com.fertec.bal;
 using pe.com.fertec.bo;
+using pe.com.fertec.ui.rol;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -75,7 +76,7 @@ namespace pe.com.fertec.ui
             chkEstado.Enabled = habilitado;
             btnRegistrar.Enabled = habilitado;
             btnActualizar.Enabled = habilitado;
-            btnEliminar.Enabled = habilitado;
+            //btnEliminar.Enabled = habilitado;
             btnHabilitar.Enabled = habilitado;
         }
 
@@ -167,7 +168,7 @@ namespace pe.com.fertec.ui
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (indice < 0)
+            /*if (indice < 0)
             {
                 MessageBox.Show("Seleccione un elemento de la lista.", "Inhabilitar rol", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 dgvRol.Focus();
@@ -187,12 +188,15 @@ namespace pe.com.fertec.ui
                     btnNuevo.Enabled = true;
                     indice = -1;
                 }
-            }
+            }*/
         }
 
         private void btnHabilitar_Click(object sender, EventArgs e)
         {
-            if (indice < 0)
+            habilitarRol formulario = new habilitarRol();
+            formulario.ShowDialog();
+            Listar();
+            /*if (indice < 0)
             {
                 MessageBox.Show("Seleccione un elemento de la lista.", "Habilitar rol", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 dgvRol.Focus();
@@ -208,7 +212,7 @@ namespace pe.com.fertec.ui
                 Habilitar(false);
                 btnNuevo.Enabled = true;
                 indice = -1;
-            }
+            }*/
         }
 
         private void dgvRol_CellClick(object sender, DataGridViewCellEventArgs e)

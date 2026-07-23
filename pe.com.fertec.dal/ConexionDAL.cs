@@ -8,8 +8,12 @@ namespace pe.com.fertec.dal
 {
     public class ConexionDAL
     {
+        //conexion omar
         private string cadena = "Data Source=DESKTOP-V0PI1FI; Initial Catalog=bdferreteria2026; Integrated Security=True; TrustServerCertificate=True;";
         //private string cadena = "Data Source=THAISWIFT; Initial Catalog=bdferreteria2026; Integrated Security=True; TrustServerCertificate=True;";
+
+        // private string cadena = "Data Source=.; Initial Catalog=bdferreteria2026; Integrated Security=True; TrustServerCertificate=True;";
+        //ce610b7e67b4d3f29a5fe733ce2bacaa422ff8f2
 
         private SqlConnection xcon;
 

@@ -31,7 +31,6 @@
             dgvRol = new DataGridView();
             btnSalir = new Button();
             btnHabilitar = new Button();
-            btnEliminar = new Button();
             btnActualizar = new Button();
             btnRegistrar = new Button();
             btnNuevo = new Button();
@@ -67,23 +66,13 @@
             // 
             // btnHabilitar
             // 
-            btnHabilitar.Location = new Point(488, 197);
+            btnHabilitar.Location = new Point(390, 197);
             btnHabilitar.Name = "btnHabilitar";
             btnHabilitar.Size = new Size(75, 23);
             btnHabilitar.TabIndex = 24;
             btnHabilitar.Text = "Habilitar";
             btnHabilitar.UseVisualStyleBackColor = true;
             btnHabilitar.Click += btnHabilitar_Click;
-            // 
-            // btnEliminar
-            // 
-            btnEliminar.Location = new Point(390, 197);
-            btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(75, 23);
-            btnEliminar.TabIndex = 23;
-            btnEliminar.Text = "Inhabilitar";
-            btnEliminar.UseVisualStyleBackColor = true;
-            btnEliminar.Click += btnEliminar_Click;
             // 
             // btnActualizar
             // 
@@ -168,7 +157,7 @@
             textBox1.TabIndex = 14;
             textBox1.Text = "Rol";
             // 
-            // rolForm
+            // rolFrm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -176,7 +165,6 @@
             Controls.Add(dgvRol);
             Controls.Add(btnSalir);
             Controls.Add(btnHabilitar);
-            Controls.Add(btnEliminar);
             Controls.Add(btnActualizar);
             Controls.Add(btnRegistrar);
             Controls.Add(btnNuevo);
@@ -186,7 +174,7 @@
             Controls.Add(label1);
             Controls.Add(txtCodigo);
             Controls.Add(textBox1);
-            Name = "rolForm";
+            Name = "rolFrm";
             Text = "rolForm";
             Load += rolForm_Load_1;
             ((System.ComponentModel.ISupportInitialize)dgvRol).EndInit();
@@ -204,7 +192,6 @@
         private Button btnNuevo;
         private Button btnRegistrar;
         private Button btnActualizar;
-        private Button btnEliminar;
         private Button btnHabilitar;
         private Button btnSalir;
         private DataGridView dgvRol;

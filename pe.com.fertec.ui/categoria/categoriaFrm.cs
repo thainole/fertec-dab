@@ -1,5 +1,6 @@
 using pe.com.fertec.bal;
 using pe.com.fertec.bo;
+using pe.com.fertec.ui.categoria;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -75,7 +76,7 @@ namespace pe.com.fertec.ui
             chkEstado.Enabled = habilitado;
             btnRegistrar.Enabled = habilitado;
             btnActualizar.Enabled = habilitado;
-            btnEliminar.Enabled = habilitado;
+            //btnEliminar.Enabled = habilitado;
             btnHabilitar.Enabled = habilitado;
         }
 
@@ -167,48 +168,51 @@ namespace pe.com.fertec.ui
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (indice < 0)
-            {
-                MessageBox.Show("Seleccione un elemento de la lista.", "Inhabilitar categoría", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                dgvCategorias.Focus();
-                return;
-            }
+            //if (indice < 0)
+            //{
+            //    MessageBox.Show("Seleccione un elemento de la lista.", "Inhabilitar categoría", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //    dgvCategorias.Focus();
+            //    return;
+            //}
 
-            int id = Convert.ToInt32(txtCodigo.Text);
-            DialogResult resultado = MessageBox.Show("¿Desea inhabilitar la categoría?", "Inhabilitar categoría", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (resultado == DialogResult.Yes)
-            {
-                if (bal.delete(id))
-                {
-                    MessageBox.Show("Categoría inhabilitada correctamente.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Listar();
-                    Limpiar();
-                    Habilitar(false);
-                    btnNuevo.Enabled = true;
-                    indice = -1;
-                }
-            }
+            //int id = Convert.ToInt32(txtCodigo.Text);
+            //DialogResult resultado = MessageBox.Show("¿Desea inhabilitar la categoría?", "Inhabilitar categoría", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            //if (resultado == DialogResult.Yes)
+            //{
+            //    if (bal.delete(id))
+            //    {
+            //        MessageBox.Show("Categoría inhabilitada correctamente.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //        Listar();
+            //        Limpiar();
+            //        Habilitar(false);
+            //        btnNuevo.Enabled = true;
+            //        indice = -1;
+            //    }
+            //}
         }
 
         private void btnHabilitar_Click(object sender, EventArgs e)
         {
-            if (indice < 0)
-            {
-                MessageBox.Show("Seleccione un elemento de la lista.", "Habilitar categoría", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                dgvCategorias.Focus();
-                return;
-            }
+            habilitarCategoria formulario = new habilitarCategoria();
+            formulario.ShowDialog();
+            Listar();
+            //if (indice < 0)
+            //{
+            //    MessageBox.Show("Seleccione un elemento de la lista.", "Habilitar categoría", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //    dgvCategorias.Focus();
+            //    return;
+            //}
 
-            int id = Convert.ToInt32(txtCodigo.Text);
-            if (bal.enable(id))
-            {
-                MessageBox.Show("Categoría habilitada correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                Listar();
-                Limpiar();
-                Habilitar(false);
-                btnNuevo.Enabled = true;
-                indice = -1;
-            }
+            //int id = Convert.ToInt32(txtCodigo.Text);
+            //if (bal.enable(id))
+            //{
+            //    MessageBox.Show("Categoría habilitada correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //    Listar();
+            //    Limpiar();
+            //    Habilitar(false);
+            //    btnNuevo.Enabled = true;
+            //    indice = -1;
+            //}
         }
 
         private void dgvCategorias_CellClick(object sender, DataGridViewCellEventArgs e)

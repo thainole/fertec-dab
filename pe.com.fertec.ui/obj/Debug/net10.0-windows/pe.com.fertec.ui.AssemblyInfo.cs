@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("pe.com.fertec.ui")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a411eaca5ddd6c99fb4e75ee02bcfbd26e231aab")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8f5963355a26e4a52f5f1d50abfe73f94831a03d")]
 [assembly: System.Reflection.AssemblyProductAttribute("pe.com.fertec.ui")]
 [assembly: System.Reflection.AssemblyTitleAttribute("pe.com.fertec.ui")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
