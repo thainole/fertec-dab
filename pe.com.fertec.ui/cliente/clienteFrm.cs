@@ -423,9 +423,15 @@ namespace pe.com.fertec.ui
         private void FinalizarOperacion()
         {
             Listar();
+            RestablecerModoConsulta();
+        }
+
+        private void RestablecerModoConsulta()
+        {
             Limpiar();
             Habilitar(false);
             btnNuevo.Enabled = true;
+            dgvClientes.ClearSelection();
             indice = -1;
         }
 
@@ -599,6 +605,8 @@ namespace pe.com.fertec.ui
                 return;
             }
 
+            RestablecerModoConsulta();
+
             try
             {
                 ClienteBO? cliente = bal.findById(codigo);
@@ -625,11 +633,13 @@ namespace pe.com.fertec.ui
         {
             txtBuscar.Clear();
             Listar();
+            RestablecerModoConsulta();
         }
 
         private void chkMostrarTodos_CheckedChanged(object sender, EventArgs e)
         {
             Listar();
+            RestablecerModoConsulta();
         }
 
         private void dgvClientes_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -644,11 +654,7 @@ namespace pe.com.fertec.ui
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            Limpiar();
-            Habilitar(false);
-            btnNuevo.Enabled = true;
-            dgvClientes.ClearSelection();
-            indice = -1;
+            RestablecerModoConsulta();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)

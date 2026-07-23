@@ -253,7 +253,7 @@ namespace pe.com.fertec.ui
             btnNuevo.Location = new Point(27, 257);
             btnNuevo.Name = "btnNuevo";
             btnNuevo.Size = new Size(90, 27);
-            btnNuevo.TabIndex = 26;
+            btnNuevo.TabIndex = 27;
             btnNuevo.Text = "Nuevo";
             btnNuevo.UseVisualStyleBackColor = true;
             btnNuevo.Click += btnNuevo_Click;
@@ -263,7 +263,7 @@ namespace pe.com.fertec.ui
             btnRegistrar.Location = new Point(133, 257);
             btnRegistrar.Name = "btnRegistrar";
             btnRegistrar.Size = new Size(90, 27);
-            btnRegistrar.TabIndex = 27;
+            btnRegistrar.TabIndex = 28;
             btnRegistrar.Text = "Registrar";
             btnRegistrar.UseVisualStyleBackColor = true;
             btnRegistrar.Click += btnRegistrar_Click;
@@ -273,7 +273,7 @@ namespace pe.com.fertec.ui
             btnActualizar.Location = new Point(239, 257);
             btnActualizar.Name = "btnActualizar";
             btnActualizar.Size = new Size(90, 27);
-            btnActualizar.TabIndex = 28;
+            btnActualizar.TabIndex = 29;
             btnActualizar.Text = "Actualizar";
             btnActualizar.UseVisualStyleBackColor = true;
             btnActualizar.Click += btnActualizar_Click;
@@ -283,7 +283,7 @@ namespace pe.com.fertec.ui
             btnInhabilitar.Location = new Point(345, 257);
             btnInhabilitar.Name = "btnInhabilitar";
             btnInhabilitar.Size = new Size(90, 27);
-            btnInhabilitar.TabIndex = 29;
+            btnInhabilitar.TabIndex = 30;
             btnInhabilitar.Text = "Inhabilitar";
             btnInhabilitar.UseVisualStyleBackColor = true;
             btnInhabilitar.Click += btnInhabilitar_Click;
@@ -293,7 +293,7 @@ namespace pe.com.fertec.ui
             btnHabilitar.Location = new Point(451, 257);
             btnHabilitar.Name = "btnHabilitar";
             btnHabilitar.Size = new Size(90, 27);
-            btnHabilitar.TabIndex = 30;
+            btnHabilitar.TabIndex = 31;
             btnHabilitar.Text = "Habilitar";
             btnHabilitar.UseVisualStyleBackColor = true;
             btnHabilitar.Click += btnHabilitar_Click;
@@ -303,7 +303,7 @@ namespace pe.com.fertec.ui
             btnCancelar.Location = new Point(557, 257);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(90, 27);
-            btnCancelar.TabIndex = 31;
+            btnCancelar.TabIndex = 32;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
             btnCancelar.Click += btnCancelar_Click;
@@ -313,7 +313,7 @@ namespace pe.com.fertec.ui
             btnSalir.Location = new Point(1047, 257);
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new Size(90, 27);
-            btnSalir.TabIndex = 32;
+            btnSalir.TabIndex = 33;
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = true;
             btnSalir.Click += btnSalir_Click;
@@ -360,7 +360,7 @@ namespace pe.com.fertec.ui
             chkMostrarTodos.Location = new Point(451, 225);
             chkMostrarTodos.Name = "chkMostrarTodos";
             chkMostrarTodos.Size = new Size(107, 19);
-            chkMostrarTodos.TabIndex = 25;
+            chkMostrarTodos.TabIndex = 26;
             chkMostrarTodos.Text = "Mostrar todos";
             chkMostrarTodos.UseVisualStyleBackColor = true;
             chkMostrarTodos.CheckedChanged += chkMostrarTodos_CheckedChanged;
@@ -372,7 +372,7 @@ namespace pe.com.fertec.ui
             dgvProductos.Location = new Point(27, 302);
             dgvProductos.Name = "dgvProductos";
             dgvProductos.Size = new Size(1110, 346);
-            dgvProductos.TabIndex = 33;
+            dgvProductos.TabIndex = 34;
             dgvProductos.CellClick += dgvProductos_CellClick;
             //
             // productoFrm
