@@ -1,5 +1,3 @@
-using pe.com.fertec.ui.empleado;
-
 namespace pe.com.fertec.ui
 {
     internal static class Program
@@ -11,7 +9,7 @@ namespace pe.com.fertec.ui
         static void Main()
         {
             ApplicationConfiguration.Initialize();
-            Application.Run(new frmempleado());
+            Application.Run(new frmingreso());
         }
     }
 }

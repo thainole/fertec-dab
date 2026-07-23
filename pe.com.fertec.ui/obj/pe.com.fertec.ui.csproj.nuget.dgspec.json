@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\omama\\OneDrive\\Escritorio\\fertec-proyecto-final\\pe.com.fertec.ui\\pe.com.fertec.ui.csproj": {}
+    "C:\\Users\\thain\\Documents\\ISIL\\2026-1\\5447-dab-lab\\Fertec\\Fertec\\pe.com.fertec.ui\\pe.com.fertec.ui.csproj": {}
   },
   "projects": {
-    "C:\\Users\\omama\\OneDrive\\Escritorio\\fertec-proyecto-final\\pe.com.fertec.bal\\pe.com.fertec.bal.csproj": {
+    "C:\\Users\\thain\\Documents\\ISIL\\2026-1\\5447-dab-lab\\Fertec\\Fertec\\pe.com.fertec.bal\\pe.com.fertec.bal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\omama\\OneDrive\\Escritorio\\fertec-proyecto-final\\pe.com.fertec.bal\\pe.com.fertec.bal.csproj",
+        "projectUniqueName": "C:\\Users\\thain\\Documents\\ISIL\\2026-1\\5447-dab-lab\\Fertec\\Fertec\\pe.com.fertec.bal\\pe.com.fertec.bal.csproj",
         "projectName": "pe.com.fertec.bal",
-        "projectPath": "C:\\Users\\omama\\OneDrive\\Escritorio\\fertec-proyecto-final\\pe.com.fertec.bal\\pe.com.fertec.bal.csproj",
-        "packagesPath": "C:\\Users\\omama\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\omama\\OneDrive\\Escritorio\\fertec-proyecto-final\\pe.com.fertec.bal\\obj\\",
+        "projectPath": "C:\\Users\\thain\\Documents\\ISIL\\2026-1\\5447-dab-lab\\Fertec\\Fertec\\pe.com.fertec.bal\\pe.com.fertec.bal.csproj",
+        "packagesPath": "C:\\Users\\thain\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\thain\\Documents\\ISIL\\2026-1\\5447-dab-lab\\Fertec\\Fertec\\pe.com.fertec.bal\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\omama\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\thain\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -31,13 +31,14 @@
         },
         "frameworks": {
           "net10.0": {
+            "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\omama\\OneDrive\\Escritorio\\fertec-proyecto-final\\pe.com.fertec.bo\\pe.com.fertec.bo.csproj": {
-                "projectPath": "C:\\Users\\omama\\OneDrive\\Escritorio\\fertec-proyecto-final\\pe.com.fertec.bo\\pe.com.fertec.bo.csproj"
+              "C:\\Users\\thain\\Documents\\ISIL\\2026-1\\5447-dab-lab\\Fertec\\Fertec\\pe.com.fertec.bo\\pe.com.fertec.bo.csproj": {
+                "projectPath": "C:\\Users\\thain\\Documents\\ISIL\\2026-1\\5447-dab-lab\\Fertec\\Fertec\\pe.com.fertec.bo\\pe.com.fertec.bo.csproj"
               },
-              "C:\\Users\\omama\\OneDrive\\Escritorio\\fertec-proyecto-final\\pe.com.fertec.dal\\pe.com.fertec.dal.csproj": {
-                "projectPath": "C:\\Users\\omama\\OneDrive\\Escritorio\\fertec-proyecto-final\\pe.com.fertec.dal\\pe.com.fertec.dal.csproj"
+              "C:\\Users\\thain\\Documents\\ISIL\\2026-1\\5447-dab-lab\\Fertec\\Fertec\\pe.com.fertec.dal\\pe.com.fertec.dal.csproj": {
+                "projectPath": "C:\\Users\\thain\\Documents\\ISIL\\2026-1\\5447-dab-lab\\Fertec\\Fertec\\pe.com.fertec.dal\\pe.com.fertec.dal.csproj"
               }
             }
           }
@@ -52,10 +53,11 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
           "imports": [
             "net461",
@@ -73,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -351,20 +353,20 @@
         }
       }
     },
-    "C:\\Users\\omama\\OneDrive\\Escritorio\\fertec-proyecto-final\\pe.com.fertec.bo\\pe.com.fertec.bo.csproj": {
+    "C:\\Users\\thain\\Documents\\ISIL\\2026-1\\5447-dab-lab\\Fertec\\Fertec\\pe.com.fertec.bo\\pe.com.fertec.bo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\omama\\OneDrive\\Escritorio\\fertec-proyecto-final\\pe.com.fertec.bo\\pe.com.fertec.bo.csproj",
+        "projectUniqueName": "C:\\Users\\thain\\Documents\\ISIL\\2026-1\\5447-dab-lab\\Fertec\\Fertec\\pe.com.fertec.bo\\pe.com.fertec.bo.csproj",
         "projectName": "pe.com.fertec.bo",
-        "projectPath": "C:\\Users\\omama\\OneDrive\\Escritorio\\fertec-proyecto-final\\pe.com.fertec.bo\\pe.com.fertec.bo.csproj",
-        "packagesPath": "C:\\Users\\omama\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\omama\\OneDrive\\Escritorio\\fertec-proyecto-final\\pe.com.fertec.bo\\obj\\",
+        "projectPath": "C:\\Users\\thain\\Documents\\ISIL\\2026-1\\5447-dab-lab\\Fertec\\Fertec\\pe.com.fertec.bo\\pe.com.fertec.bo.csproj",
+        "packagesPath": "C:\\Users\\thain\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\thain\\Documents\\ISIL\\2026-1\\5447-dab-lab\\Fertec\\Fertec\\pe.com.fertec.bo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\omama\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\thain\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -378,6 +380,7 @@
         },
         "frameworks": {
           "net10.0": {
+            "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {}
           }
@@ -392,10 +395,11 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
           "imports": [
             "net461",
@@ -413,7 +417,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -691,20 +695,20 @@
         }
       }
     },
-    "C:\\Users\\omama\\OneDrive\\Escritorio\\fertec-proyecto-final\\pe.com.fertec.dal\\pe.com.fertec.dal.csproj": {
+    "C:\\Users\\thain\\Documents\\ISIL\\2026-1\\5447-dab-lab\\Fertec\\Fertec\\pe.com.fertec.dal\\pe.com.fertec.dal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\omama\\OneDrive\\Escritorio\\fertec-proyecto-final\\pe.com.fertec.dal\\pe.com.fertec.dal.csproj",
+        "projectUniqueName": "C:\\Users\\thain\\Documents\\ISIL\\2026-1\\5447-dab-lab\\Fertec\\Fertec\\pe.com.fertec.dal\\pe.com.fertec.dal.csproj",
         "projectName": "pe.com.fertec.dal",
-        "projectPath": "C:\\Users\\omama\\OneDrive\\Escritorio\\fertec-proyecto-final\\pe.com.fertec.dal\\pe.com.fertec.dal.csproj",
-        "packagesPath": "C:\\Users\\omama\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\omama\\OneDrive\\Escritorio\\fertec-proyecto-final\\pe.com.fertec.dal\\obj\\",
+        "projectPath": "C:\\Users\\thain\\Documents\\ISIL\\2026-1\\5447-dab-lab\\Fertec\\Fertec\\pe.com.fertec.dal\\pe.com.fertec.dal.csproj",
+        "packagesPath": "C:\\Users\\thain\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\thain\\Documents\\ISIL\\2026-1\\5447-dab-lab\\Fertec\\Fertec\\pe.com.fertec.dal\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\omama\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\thain\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -718,10 +722,11 @@
         },
         "frameworks": {
           "net10.0": {
+            "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\omama\\OneDrive\\Escritorio\\fertec-proyecto-final\\pe.com.fertec.bo\\pe.com.fertec.bo.csproj": {
-                "projectPath": "C:\\Users\\omama\\OneDrive\\Escritorio\\fertec-proyecto-final\\pe.com.fertec.bo\\pe.com.fertec.bo.csproj"
+              "C:\\Users\\thain\\Documents\\ISIL\\2026-1\\5447-dab-lab\\Fertec\\Fertec\\pe.com.fertec.bo\\pe.com.fertec.bo.csproj": {
+                "projectPath": "C:\\Users\\thain\\Documents\\ISIL\\2026-1\\5447-dab-lab\\Fertec\\Fertec\\pe.com.fertec.bo\\pe.com.fertec.bo.csproj"
               }
             }
           }
@@ -736,10 +741,11 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
           "dependencies": {
             "Microsoft.Data.SqlClient": {
@@ -763,7 +769,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -1041,20 +1047,20 @@
         }
       }
     },
-    "C:\\Users\\omama\\OneDrive\\Escritorio\\fertec-proyecto-final\\pe.com.fertec.ui\\pe.com.fertec.ui.csproj": {
+    "C:\\Users\\thain\\Documents\\ISIL\\2026-1\\5447-dab-lab\\Fertec\\Fertec\\pe.com.fertec.ui\\pe.com.fertec.ui.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\omama\\OneDrive\\Escritorio\\fertec-proyecto-final\\pe.com.fertec.ui\\pe.com.fertec.ui.csproj",
+        "projectUniqueName": "C:\\Users\\thain\\Documents\\ISIL\\2026-1\\5447-dab-lab\\Fertec\\Fertec\\pe.com.fertec.ui\\pe.com.fertec.ui.csproj",
         "projectName": "pe.com.fertec.ui",
-        "projectPath": "C:\\Users\\omama\\OneDrive\\Escritorio\\fertec-proyecto-final\\pe.com.fertec.ui\\pe.com.fertec.ui.csproj",
-        "packagesPath": "C:\\Users\\omama\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\omama\\OneDrive\\Escritorio\\fertec-proyecto-final\\pe.com.fertec.ui\\obj\\",
+        "projectPath": "C:\\Users\\thain\\Documents\\ISIL\\2026-1\\5447-dab-lab\\Fertec\\Fertec\\pe.com.fertec.ui\\pe.com.fertec.ui.csproj",
+        "packagesPath": "C:\\Users\\thain\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\thain\\Documents\\ISIL\\2026-1\\5447-dab-lab\\Fertec\\Fertec\\pe.com.fertec.ui\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\omama\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\thain\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -1067,11 +1073,12 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net10.0-windows7.0": {
+          "net10.0-windows": {
+            "framework": "net10.0-windows7.0",
             "targetAlias": "net10.0-windows",
             "projectReferences": {
-              "C:\\Users\\omama\\OneDrive\\Escritorio\\fertec-proyecto-final\\pe.com.fertec.bal\\pe.com.fertec.bal.csproj": {
-                "projectPath": "C:\\Users\\omama\\OneDrive\\Escritorio\\fertec-proyecto-final\\pe.com.fertec.bal\\pe.com.fertec.bal.csproj"
+              "C:\\Users\\thain\\Documents\\ISIL\\2026-1\\5447-dab-lab\\Fertec\\Fertec\\pe.com.fertec.bal\\pe.com.fertec.bal.csproj": {
+                "projectPath": "C:\\Users\\thain\\Documents\\ISIL\\2026-1\\5447-dab-lab\\Fertec\\Fertec\\pe.com.fertec.bal\\pe.com.fertec.bal.csproj"
               }
             }
           }
@@ -1086,10 +1093,11 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
-        "net10.0-windows7.0": {
+        "net10.0-windows": {
+          "framework": "net10.0-windows7.0",
           "targetAlias": "net10.0-windows",
           "imports": [
             "net461",
@@ -1110,7 +1118,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
