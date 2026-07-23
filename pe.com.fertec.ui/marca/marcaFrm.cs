@@ -76,7 +76,7 @@ namespace pe.com.fertec.ui
             chkEstado.Enabled = habilitado;
             btnRegistrar.Enabled = habilitado;
             btnActualizar.Enabled = habilitado;
-            btnEliminar.Enabled = habilitado;
+            //btnEliminar.Enabled = habilitado;
             btnHabilitar.Enabled = habilitado;
         }
 

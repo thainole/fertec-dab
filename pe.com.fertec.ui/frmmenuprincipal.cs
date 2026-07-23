@@ -118,16 +118,6 @@ namespace pe.com.fertec.ui
 
         private void tsmiVenta_Click(object sender, EventArgs e)
         {
-            // Util.AbrirFormulario<tipoDocumentoFrm>(this);
-        }
-
-        private void tsmiListadoVenta_Click(object sender, EventArgs e)
-        {
-            // Util.AbrirFormulario<tipoDocumentoFrm>(this);
-        }
-
-        private void tsmiVenta_Click(object sender, EventArgs e)
-        {
             frmventa ventana = new frmventa();
             ventana.ShowDialog();
         }
