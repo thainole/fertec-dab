@@ -8,7 +8,7 @@ namespace pe.com.fertec.dal
 {
     public class ConexionDAL
     {
-        private string cadena = "Data Source=DESKTOP-V0PI1FI; Initial Catalog=bdferreteria2026; Integrated Security=True; TrustServerCertificate=True;";
+        private string cadena = "Data Source=THAISWIFT; Initial Catalog=bdferreteria2026; Integrated Security=True; TrustServerCertificate=True;";
 
         private SqlConnection xcon;
 
