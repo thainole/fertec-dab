@@ -1,3 +1,5 @@
+using pe.com.fertec.ui.tipodocumento;
+
 namespace pe.com.fertec.ui
 {
     internal static class Program

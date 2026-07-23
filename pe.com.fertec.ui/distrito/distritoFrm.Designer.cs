@@ -40,24 +40,25 @@
             label2 = new Label();
             label1 = new Label();
             txtCodigo = new TextBox();
-            textBox1 = new TextBox();
+            btnBuscar = new Button();
+            label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvDistrito).BeginInit();
             SuspendLayout();
             // 
             // dgvDistrito
             // 
-            dgvDistrito.BackgroundColor = SystemColors.Window;
+            dgvDistrito.BackgroundColor = SystemColors.ControlLight;
             dgvDistrito.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvDistrito.GridColor = SystemColors.Window;
             dgvDistrito.Location = new Point(38, 241);
             dgvDistrito.Name = "dgvDistrito";
-            dgvDistrito.Size = new Size(724, 185);
+            dgvDistrito.Size = new Size(826, 285);
             dgvDistrito.TabIndex = 39;
             dgvDistrito.CellClick += dgvDistrito_CellClick;
             // 
             // btnSalir
             // 
-            btnSalir.Location = new Point(687, 197);
+            btnSalir.Location = new Point(773, 197);
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new Size(75, 23);
             btnSalir.TabIndex = 38;
@@ -67,7 +68,7 @@
             // 
             // btnHabilitar
             // 
-            btnHabilitar.Location = new Point(488, 197);
+            btnHabilitar.Location = new Point(411, 197);
             btnHabilitar.Name = "btnHabilitar";
             btnHabilitar.Size = new Size(75, 23);
             btnHabilitar.TabIndex = 37;
@@ -77,17 +78,17 @@
             // 
             // btnEliminar
             // 
-            btnEliminar.Location = new Point(390, 197);
+            btnEliminar.Location = new Point(321, 197);
             btnEliminar.Name = "btnEliminar";
             btnEliminar.Size = new Size(75, 23);
             btnEliminar.TabIndex = 36;
-            btnEliminar.Text = "Inhabilitar";
+            btnEliminar.Text = "Eliminar";
             btnEliminar.UseVisualStyleBackColor = true;
             btnEliminar.Click += btnEliminar_Click;
             // 
             // btnActualizar
             // 
-            btnActualizar.Location = new Point(281, 197);
+            btnActualizar.Location = new Point(226, 197);
             btnActualizar.Name = "btnActualizar";
             btnActualizar.Size = new Size(75, 23);
             btnActualizar.TabIndex = 35;
@@ -97,7 +98,7 @@
             // 
             // btnRegistrar
             // 
-            btnRegistrar.Location = new Point(176, 197);
+            btnRegistrar.Location = new Point(134, 197);
             btnRegistrar.Name = "btnRegistrar";
             btnRegistrar.Size = new Size(75, 23);
             btnRegistrar.TabIndex = 34;
@@ -107,7 +108,7 @@
             // 
             // btnNuevo
             // 
-            btnNuevo.Location = new Point(61, 197);
+            btnNuevo.Location = new Point(38, 197);
             btnNuevo.Name = "btnNuevo";
             btnNuevo.Size = new Size(75, 23);
             btnNuevo.TabIndex = 33;
@@ -120,16 +121,16 @@
             chkEstado.AutoSize = true;
             chkEstado.Location = new Point(49, 160);
             chkEstado.Name = "chkEstado";
-            chkEstado.Size = new Size(58, 19);
+            chkEstado.Size = new Size(81, 19);
             chkEstado.TabIndex = 32;
-            chkEstado.Text = "activo";
+            chkEstado.Text = "Habilitado";
             chkEstado.UseVisualStyleBackColor = true;
             // 
             // txtNombre
             // 
             txtNombre.Location = new Point(113, 110);
             txtNombre.Name = "txtNombre";
-            txtNombre.Size = new Size(100, 23);
+            txtNombre.Size = new Size(229, 23);
             txtNombre.TabIndex = 31;
             // 
             // label2
@@ -154,25 +155,36 @@
             // 
             txtCodigo.Location = new Point(113, 78);
             txtCodigo.Name = "txtCodigo";
-            txtCodigo.Size = new Size(100, 23);
+            txtCodigo.Size = new Size(229, 23);
             txtCodigo.TabIndex = 28;
             // 
-            // textBox1
+            // btnBuscar
             // 
-            textBox1.BackColor = SystemColors.Menu;
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Yu Gothic Medium", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(74, 25);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(163, 47);
-            textBox1.TabIndex = 27;
-            textBox1.Text = "Distrito";
+            btnBuscar.Location = new Point(507, 197);
+            btnBuscar.Name = "btnBuscar";
+            btnBuscar.Size = new Size(75, 23);
+            btnBuscar.TabIndex = 40;
+            btnBuscar.Text = "Buscar";
+            btnBuscar.UseVisualStyleBackColor = true;
+            btnBuscar.Click += btnBuscar_Click;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("SimSun", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(268, 21);
+            label3.Name = "label3";
+            label3.Size = new Size(372, 27);
+            label3.TabIndex = 41;
+            label3.Text = "Mantenimiento - Distrito";
             // 
             // distritoFrm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(912, 554);
+            Controls.Add(label3);
+            Controls.Add(btnBuscar);
             Controls.Add(dgvDistrito);
             Controls.Add(btnSalir);
             Controls.Add(btnHabilitar);
@@ -185,7 +197,6 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(txtCodigo);
-            Controls.Add(textBox1);
             Name = "distritoFrm";
             Text = "distritoFrm";
             Load += distritoFrm_Load;
@@ -208,6 +219,7 @@
         private Label label2;
         private Label label1;
         private TextBox txtCodigo;
-        private TextBox textBox1;
+        private Button btnBuscar;
+        private Label label3;
     }
 }

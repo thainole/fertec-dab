@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using pe.com.fertec.bo;
+using pe.com.fertec.ui.tipodocumento;
 using pe.com.fertec.ui.util;
 
 namespace pe.com.fertec.ui
@@ -98,7 +99,7 @@ namespace pe.com.fertec.ui
 
         private void tsmiTipoDocumento_Click(object sender, EventArgs e)
         {
-            Util.AbrirFormulario<tipoDocumentoFrm>(this);
+            Util.AbrirFormulario<frmTipoDocumento>(this);
         }
 
         private void tsmiProducto_Click(object sender, EventArgs e)

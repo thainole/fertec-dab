@@ -1,9 +1,12 @@
 using pe.com.fertec.bal;
 using pe.com.fertec.bo;
+using pe.com.fertec.ui.distrito;
+using pe.com.fertec.ui.util;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
@@ -12,52 +15,131 @@ namespace pe.com.fertec.ui
 {
     public partial class distritoFrm : Form
     {
+        //creamos un objeto de DistritoBAL
         private DistritoBAL bal = new DistritoBAL();
-        private int indice = -1;
 
-        public distritoFrm()
+        //creamos un objeto de DistritoBO
+        private DistritoBO obj = new DistritoBO();
+
+        //declaramos variables
+        private int cod = 0, indice = -1;
+        private string nom = "";
+        private bool est = false, res = false;
+
+        //creamos un procedimiento para bloquear
+        private void Bloquear()
         {
-            InitializeComponent();
-            StartPosition = FormStartPosition.CenterScreen;
-            Habilitar(false);
-            SoloLectura();
-            ConfigurarDGV();
+            txtCodigo.Enabled = false;
+            txtNombre.Enabled = false;
+            chkEstado.Enabled = false;
+            btnRegistrar.Enabled = false;
+            btnActualizar.Enabled = false;
+            btnEliminar.Enabled = false;
         }
 
-        private void distritoFrm_Load(object sender, EventArgs e)
+        //creamos un procedimiento para desbloquear
+        private void Desbloquear()
         {
-            Listar();
-            CargarCodigo();
+            txtCodigo.Enabled = true;
+            txtNombre.Enabled = true;
+            chkEstado.Enabled = true;
+            btnRegistrar.Enabled = true;
+            btnActualizar.Enabled = true;
+            btnEliminar.Enabled = true;
         }
 
-        private void ConfigurarDGV()
+        //creamos un procedimiento de solo lectura
+        private void SoleLectura()
         {
-            dgvDistrito.AllowUserToAddRows = false;
+            txtCodigo.ReadOnly = true;
+        }
+
+        //creamos un procedimiento para limpiar
+        private void Limpiar()
+        {
+            txtCodigo.Text = "";
+            txtNombre.Text = "";
+            chkEstado.Checked = false;
+        }
+
+        //creamos un procedimiento para cargar Distrito
+        private void CargarDistrito()
+        {
+            //creamos una lista para almacenar los valores
+            List<DistritoBO> distritos = bal.findAllCustom();
+
+            //asignamos los valores al DataGridView
+            dgvDistrito.DataSource = distritos;
+        }
+
+        //creamos un procedimiento para personalizar el DataGridView
+        private void PersonalizarDataGridView()
+        {
+            //Ajustar el tamaño de las columnas
             dgvDistrito.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+
+            //Ajustar el ancho para llenar el DataGridView
             dgvDistrito.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            //Evitar que las columnas se autogeneren
             dgvDistrito.AutoGenerateColumns = false;
-            dgvDistrito.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvDistrito.MultiSelect = false;
-            dgvDistrito.ReadOnly = true;
+
+            //Limpiar las columnas existentes
             dgvDistrito.Columns.Clear();
+
+            //Eliminar la selección inicial
             dgvDistrito.ClearSelection();
-            dgvDistrito.CellBorderStyle = DataGridViewCellBorderStyle.Single;
-            dgvDistrito.GridColor = System.Drawing.Color.LightGray;
-            dgvDistrito.AlternatingRowsDefaultCellStyle.BackColor = System.Drawing.Color.AliceBlue;
 
-            dgvDistrito.Columns.Add("codigo", "Código");
-            dgvDistrito.Columns["codigo"].DataPropertyName = "codigo";
-            dgvDistrito.Columns.Add("nombre", "Nombre");
-            dgvDistrito.Columns["nombre"].DataPropertyName = "nombre";
+            //Hacer que el DataGridView sea de solo lectura
+            dgvDistrito.ReadOnly = true;
 
-            DataGridViewTextBoxColumn colEstado = new DataGridViewTextBoxColumn
+            //Código
+            DataGridViewTextBoxColumn colcodigo = new DataGridViewTextBoxColumn
+            {
+                Name = "codigo",
+                HeaderText = "Código",
+                DataPropertyName = "codigo"
+            };
+
+            //Nombre
+            DataGridViewTextBoxColumn colnombre = new DataGridViewTextBoxColumn
+            {
+                Name = "nombre",
+                HeaderText = "Nombre",
+                DataPropertyName = "nombre"
+            };
+
+            //Estado
+            DataGridViewTextBoxColumn colestado = new DataGridViewTextBoxColumn
             {
                 Name = "estado",
                 HeaderText = "Estado",
                 DataPropertyName = "estado"
             };
-            dgvDistrito.Columns.Add(colEstado);
 
+            //Agregar columnas
+            dgvDistrito.Columns.Add(colcodigo);
+            dgvDistrito.Columns.Add(colnombre);
+            dgvDistrito.Columns.Add(colestado);
+
+            //========== ESTILO ==========
+            dgvDistrito.RowHeadersVisible = false;
+            dgvDistrito.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvDistrito.MultiSelect = false;
+            dgvDistrito.AllowUserToAddRows = false;
+            dgvDistrito.AllowUserToResizeRows = false;
+
+            dgvDistrito.EnableHeadersVisualStyles = false;
+            dgvDistrito.ColumnHeadersDefaultCellStyle.BackColor = Color.SteelBlue;
+            dgvDistrito.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dgvDistrito.ColumnHeadersDefaultCellStyle.Font =
+                new Font("Segoe UI", 9F, FontStyle.Bold);
+
+            dgvDistrito.DefaultCellStyle.SelectionBackColor = Color.SteelBlue;
+            dgvDistrito.DefaultCellStyle.SelectionForeColor = Color.White;
+            //============================
+
+            //Aplicar formato para la columna Estado
             dgvDistrito.CellFormatting += (s, e) =>
             {
                 if (dgvDistrito.Columns[e.ColumnIndex].Name == "estado" && e.Value != null)
@@ -68,72 +150,89 @@ namespace pe.com.fertec.ui
             };
         }
 
-        private void Habilitar(bool habilitado)
+        public distritoFrm()
         {
-            txtCodigo.Enabled = habilitado;
-            txtNombre.Enabled = habilitado;
-            chkEstado.Enabled = habilitado;
-            btnRegistrar.Enabled = habilitado;
-            btnActualizar.Enabled = habilitado;
-            btnEliminar.Enabled = habilitado;
-            btnHabilitar.Enabled = habilitado;
+            InitializeComponent();
+
+            //centrar el formulario
+            this.StartPosition = FormStartPosition.CenterScreen;
+
+            //bloqueamos los controles
+            Bloquear();
+
+            //hacemos las caja de solo lectura
+            SoleLectura();
+
+            //llamamos al procedimiento para cargar distrito
+            CargarDistrito();
+
+            //llamamos a la personalizacion del DataGridView
+            PersonalizarDataGridView();
         }
 
-        private void SoloLectura()
+        private void distritoFrm_Load(object sender, EventArgs e)
         {
-            txtCodigo.ReadOnly = true;
+
         }
 
-        private void Listar()
-        {
-            dgvDistrito.DataSource = null;
-            dgvDistrito.DataSource = bal.findAll();
-        }
 
-        private void CargarCodigo()
-        {
-            txtCodigo.Text = bal.setCode().ToString();
-        }
-
-        private void Limpiar()
-        {
-            txtNombre.Clear();
-            chkEstado.Checked = true;
-            CargarCodigo();
-            txtNombre.Focus();
-        }
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-            Habilitar(true);
+            //llamamos al metodo para desbloquear
+            Desbloquear();
+
+            //llamamos al metodo para limpiar
             Limpiar();
+
+            //bloqueamos el boton nuevo
             btnNuevo.Enabled = false;
-            indice = -1;
+
+            //mostramos el siguiente codigo
+            txtCodigo.Text = bal.setCode().ToString();
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtNombre.Text))
+            try
             {
-                MessageBox.Show("Ingrese una descripción.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtNombre.Focus();
-                return;
+                if (txtNombre.Text == "")
+                {
+                    Util.MensajePersonalizado("Ingresa el nombre",
+                        "Registro de Distrito", 0, 48);
+
+                    txtNombre.Focus();
+                }
+                else
+                {
+                    nom = txtNombre.Text;
+                    est = chkEstado.Checked;
+
+                    obj.nombre = nom;
+                    obj.estado = est;
+
+                    res = bal.add(obj);
+
+                    if (res == true)
+                    {
+                        Util.MensajePersonalizado("Se registro el distrito",
+                            "Registro de Distrito", 0, 64);
+
+                        CargarDistrito();
+                        Limpiar();
+                        Bloquear();
+                        btnNuevo.Enabled = true;
+                    }
+                    else
+                    {
+                        Util.MensajePersonalizado("No se registro el distrito",
+                            "Registro de Distrito", 0, 16);
+                    }
+                }
             }
-
-            DistritoBO obj = new DistritoBO()
+            catch (Exception ex)
             {
-                nombre = txtNombre.Text.Trim(),
-                estado = chkEstado.Checked
-            };
-
-            if (bal.add(obj))
-            {
-                MessageBox.Show("Distrito registrado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                Listar();
-                Limpiar();
-                Habilitar(false);
-                btnNuevo.Enabled = true;
-                indice = -1;
+                Debug.WriteLine(ex.ToString());
             }
         }
 
@@ -141,27 +240,38 @@ namespace pe.com.fertec.ui
         {
             if (indice < 0)
             {
-                MessageBox.Show("Seleccione un elemento de la lista.", "Actualizar distrito", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                Util.MensajePersonalizado("Seleccione un elemento de la lista",
+                    "Actualizar Distrito", 0, 48);
+
                 dgvDistrito.Focus();
-                return;
             }
-
-            int id = Convert.ToInt32(txtCodigo.Text);
-            DistritoBO obj = new DistritoBO()
+            else
             {
-                codigo = id,
-                nombre = txtNombre.Text.Trim(),
-                estado = chkEstado.Checked
-            };
+                cod = Convert.ToInt32(txtCodigo.Text);
+                nom = txtNombre.Text;
+                est = chkEstado.Checked;
 
-            if (bal.update(obj, id))
-            {
-                MessageBox.Show("Distrito actualizado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                Listar();
-                Limpiar();
-                Habilitar(false);
-                btnNuevo.Enabled = true;
-                indice = -1;
+                obj.codigo = cod;
+                obj.nombre = nom;
+                obj.estado = est;
+
+                res = bal.update(obj, cod);
+
+                if (res == true)
+                {
+                    Util.MensajePersonalizado("Se actualizo el distrito",
+                        "Actualizar Distrito", 0, 64);
+
+                    CargarDistrito();
+                    Limpiar();
+                    Bloquear();
+                    btnNuevo.Enabled = true;
+                }
+                else
+                {
+                    Util.MensajePersonalizado("No se puede actualizar el distrito",
+                        "Actualizar Distrito", 0, 16);
+                }
             }
         }
 
@@ -169,60 +279,77 @@ namespace pe.com.fertec.ui
         {
             if (indice < 0)
             {
-                MessageBox.Show("Seleccione un elemento de la lista.", "Inhabilitar distrito", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                dgvDistrito.Focus();
-                return;
-            }
+                Util.MensajePersonalizado("Seleccione un elemento de la lista",
+                    "Eliminar Distrito", 0, 48);
 
-            int id = Convert.ToInt32(txtCodigo.Text);
-            DialogResult resultado = MessageBox.Show("¿Desea inhabilitar el distrito?", "Inhabilitar distrito", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (resultado == DialogResult.Yes)
+                dgvDistrito.Focus();
+            }
+            else
             {
-                if (bal.delete(id))
+                cod = Convert.ToInt32(txtCodigo.Text);
+
+                obj.codigo = cod;
+
+                DialogResult resultado = Util.MensajePersonalizado(
+                    "¿Quieres eliminar el distrito?", "Eliminar Distrito",
+                    4, 16);
+
+                if (resultado == DialogResult.Yes)
                 {
-                    MessageBox.Show("Distrito inhabilitado correctamente.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Listar();
-                    Limpiar();
-                    Habilitar(false);
-                    btnNuevo.Enabled = true;
-                    indice = -1;
+                    res = bal.delete(cod);
+
+                    if (res == true)
+                    {
+                        Util.MensajePersonalizado("Se elimino el distrito",
+                            "Eliminar Distrito", 0, 64);
+
+                        CargarDistrito();
+                        Limpiar();
+                        Bloquear();
+                        btnNuevo.Enabled = true;
+                    }
+                    else
+                    {
+                        Util.MensajePersonalizado("No se puede eliminar el distrito",
+                            "Eliminar Distrito", 0, 16);
+                    }
                 }
             }
         }
 
         private void btnHabilitar_Click(object sender, EventArgs e)
         {
-            if (indice < 0)
-            {
-                MessageBox.Show("Seleccione un elemento de la lista.", "Habilitar distrito", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                dgvDistrito.Focus();
-                return;
-            }
-
-            int id = Convert.ToInt32(txtCodigo.Text);
-            if (bal.enable(id))
-            {
-                MessageBox.Show("Distrito habilitado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                Listar();
-                Limpiar();
-                Habilitar(false);
-                btnNuevo.Enabled = true;
-                indice = -1;
-            }
+            frmhabilitardistrito formulario = new frmhabilitardistrito();
+            formulario.Show();
+            Hide();
         }
 
         private void dgvDistrito_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            //capturamos el indice seleccionado
             indice = e.RowIndex;
+
+            //verificamos que se seleccione un valor
             if (indice >= 0)
             {
-                Habilitar(true);
+                Desbloquear();
+
                 btnRegistrar.Enabled = false;
-                btnNuevo.Enabled = true;
-                DataGridViewRow fila = dgvDistrito.Rows[indice];
-                txtCodigo.Text = fila.Cells["codigo"].Value.ToString();
-                txtNombre.Text = fila.Cells["nombre"].Value.ToString();
-                chkEstado.Checked = Convert.ToBoolean(fila.Cells["estado"].Value);
+
+                DataGridViewRow filaseleccionada = dgvDistrito.Rows[indice];
+
+                txtCodigo.Text = filaseleccionada.Cells["codigo"].Value.ToString();
+
+                txtNombre.Text = filaseleccionada.Cells["nombre"].Value.ToString();
+
+                if (Convert.ToBoolean(filaseleccionada.Cells["estado"].Value))
+                {
+                    chkEstado.Checked = true;
+                }
+                else
+                {
+                    chkEstado.Checked = false;
+                }
             }
         }
 
@@ -232,5 +359,11 @@ namespace pe.com.fertec.ui
         }
 
         private void label2_Click(object sender, EventArgs e) { }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            frmbuscardistrito formulario = new frmbuscardistrito();
+            formulario.ShowDialog();
+        }
     }
 }

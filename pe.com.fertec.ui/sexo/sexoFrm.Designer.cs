@@ -40,29 +40,28 @@
             label2 = new Label();
             label1 = new Label();
             txtCodigo = new TextBox();
-            textBox1 = new TextBox();
+            btnBuscar = new Button();
+            label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvSexo).BeginInit();
             SuspendLayout();
             // 
             // dgvSexo
             // 
-            dgvSexo.BackgroundColor = SystemColors.Window;
+            dgvSexo.BackgroundColor = SystemColors.ControlLight;
             dgvSexo.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvSexo.GridColor = SystemColors.Window;
-            dgvSexo.Location = new Point(49, 337);
-            dgvSexo.Margin = new Padding(4, 4, 4, 4);
+            dgvSexo.Location = new Point(38, 241);
             dgvSexo.Name = "dgvSexo";
             dgvSexo.RowHeadersWidth = 56;
-            dgvSexo.Size = new Size(931, 259);
+            dgvSexo.Size = new Size(758, 269);
             dgvSexo.TabIndex = 52;
             dgvSexo.CellClick += dgvSexo_CellClick;
             // 
             // btnSalir
             // 
-            btnSalir.Location = new Point(883, 276);
-            btnSalir.Margin = new Padding(4, 4, 4, 4);
+            btnSalir.Location = new Point(687, 197);
             btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(96, 32);
+            btnSalir.Size = new Size(75, 23);
             btnSalir.TabIndex = 51;
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = true;
@@ -70,10 +69,9 @@
             // 
             // btnHabilitar
             // 
-            btnHabilitar.Location = new Point(627, 276);
-            btnHabilitar.Margin = new Padding(4, 4, 4, 4);
+            btnHabilitar.Location = new Point(412, 197);
             btnHabilitar.Name = "btnHabilitar";
-            btnHabilitar.Size = new Size(96, 32);
+            btnHabilitar.Size = new Size(75, 23);
             btnHabilitar.TabIndex = 50;
             btnHabilitar.Text = "Habilitar";
             btnHabilitar.UseVisualStyleBackColor = true;
@@ -81,21 +79,19 @@
             // 
             // btnEliminar
             // 
-            btnEliminar.Location = new Point(501, 276);
-            btnEliminar.Margin = new Padding(4, 4, 4, 4);
+            btnEliminar.Location = new Point(321, 197);
             btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(96, 32);
+            btnEliminar.Size = new Size(75, 23);
             btnEliminar.TabIndex = 49;
-            btnEliminar.Text = "Inhabilitar";
+            btnEliminar.Text = "Eliminar";
             btnEliminar.UseVisualStyleBackColor = true;
             btnEliminar.Click += btnEliminar_Click;
             // 
             // btnActualizar
             // 
-            btnActualizar.Location = new Point(361, 276);
-            btnActualizar.Margin = new Padding(4, 4, 4, 4);
+            btnActualizar.Location = new Point(234, 197);
             btnActualizar.Name = "btnActualizar";
-            btnActualizar.Size = new Size(96, 32);
+            btnActualizar.Size = new Size(75, 23);
             btnActualizar.TabIndex = 48;
             btnActualizar.Text = "Actuatlizar";
             btnActualizar.UseVisualStyleBackColor = true;
@@ -103,10 +99,9 @@
             // 
             // btnRegistrar
             // 
-            btnRegistrar.Location = new Point(226, 276);
-            btnRegistrar.Margin = new Padding(4, 4, 4, 4);
+            btnRegistrar.Location = new Point(144, 197);
             btnRegistrar.Name = "btnRegistrar";
-            btnRegistrar.Size = new Size(96, 32);
+            btnRegistrar.Size = new Size(75, 23);
             btnRegistrar.TabIndex = 47;
             btnRegistrar.Text = "Registrar";
             btnRegistrar.UseVisualStyleBackColor = true;
@@ -114,10 +109,9 @@
             // 
             // btnNuevo
             // 
-            btnNuevo.Location = new Point(78, 276);
-            btnNuevo.Margin = new Padding(4, 4, 4, 4);
+            btnNuevo.Location = new Point(49, 197);
             btnNuevo.Name = "btnNuevo";
-            btnNuevo.Size = new Size(96, 32);
+            btnNuevo.Size = new Size(75, 23);
             btnNuevo.TabIndex = 46;
             btnNuevo.Text = "Nuevo";
             btnNuevo.UseVisualStyleBackColor = true;
@@ -126,67 +120,72 @@
             // chkEstado
             // 
             chkEstado.AutoSize = true;
-            chkEstado.Location = new Point(63, 224);
-            chkEstado.Margin = new Padding(4, 4, 4, 4);
+            chkEstado.Location = new Point(49, 157);
             chkEstado.Name = "chkEstado";
-            chkEstado.Size = new Size(73, 25);
+            chkEstado.Size = new Size(71, 19);
             chkEstado.TabIndex = 45;
-            chkEstado.Text = "activo";
+            chkEstado.Text = "Habilitar";
             chkEstado.UseVisualStyleBackColor = true;
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(145, 154);
-            txtNombre.Margin = new Padding(4, 4, 4, 4);
+            txtNombre.Location = new Point(144, 110);
             txtNombre.Name = "txtNombre";
-            txtNombre.Size = new Size(127, 29);
+            txtNombre.Size = new Size(252, 23);
             txtNombre.TabIndex = 44;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(49, 165);
-            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Location = new Point(49, 118);
             label2.Name = "label2";
-            label2.Size = new Size(68, 21);
+            label2.Size = new Size(51, 15);
             label2.TabIndex = 43;
             label2.Text = "Nombre";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(49, 113);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(43, 86);
             label1.Name = "label1";
-            label1.Size = new Size(60, 21);
+            label1.Size = new Size(46, 15);
             label1.TabIndex = 42;
             label1.Text = "Codigo";
             // 
             // txtCodigo
             // 
-            txtCodigo.Location = new Point(145, 109);
-            txtCodigo.Margin = new Padding(4, 4, 4, 4);
+            txtCodigo.Location = new Point(144, 78);
             txtCodigo.Name = "txtCodigo";
-            txtCodigo.Size = new Size(127, 29);
+            txtCodigo.Size = new Size(177, 23);
             txtCodigo.TabIndex = 41;
             // 
-            // textBox1
+            // btnBuscar
             // 
-            textBox1.BackColor = SystemColors.Menu;
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Yu Gothic Medium", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(95, 35);
-            textBox1.Margin = new Padding(4, 4, 4, 4);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(210, 63);
-            textBox1.TabIndex = 40;
-            textBox1.Text = "Sexo";
+            btnBuscar.Location = new Point(493, 197);
+            btnBuscar.Name = "btnBuscar";
+            btnBuscar.Size = new Size(75, 23);
+            btnBuscar.TabIndex = 53;
+            btnBuscar.Text = "Buscar";
+            btnBuscar.UseVisualStyleBackColor = true;
+            btnBuscar.Click += btnBuscar_Click;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("SimSun", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(251, 9);
+            label3.Name = "label3";
+            label3.Size = new Size(312, 27);
+            label3.TabIndex = 54;
+            label3.Text = "Mantenimiento - Sexo";
             // 
             // sexoFrm
             // 
-            AutoScaleDimensions = new SizeF(9F, 21F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1029, 630);
+            ClientSize = new Size(836, 537);
+            Controls.Add(label3);
+            Controls.Add(btnBuscar);
             Controls.Add(dgvSexo);
             Controls.Add(btnSalir);
             Controls.Add(btnHabilitar);
@@ -199,8 +198,6 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(txtCodigo);
-            Controls.Add(textBox1);
-            Margin = new Padding(4, 4, 4, 4);
             Name = "sexoFrm";
             Text = "sexoFrm";
             Load += sexoFrm_Load;
@@ -223,6 +220,7 @@
         private Label label2;
         private Label label1;
         private TextBox txtCodigo;
-        private TextBox textBox1;
+        private Button btnBuscar;
+        private Label label3;
     }
 }

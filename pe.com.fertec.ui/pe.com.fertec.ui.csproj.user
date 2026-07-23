@@ -10,6 +10,15 @@
     <Compile Update="distrito\distritoFrm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="distrito\frmbuscardistrito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="distrito\frmhabilitardistrito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="empleado\empleadoFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="frmingreso.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -25,10 +34,22 @@
     <Compile Update="rol\rolFrm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="sexo\frmbuscarsexo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="sexo\frmhabilitarsexo.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="sexo\sexoFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="tipodocumento\tipoDocumentoFrm.cs">
+    <Compile Update="tipodocumento\frmbuscartipodocumento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="tipodocumento\frmhabilitartipodedocumento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="tipodocumento\frmTipoDocumento.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
