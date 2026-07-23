@@ -103,17 +103,17 @@ namespace pe.com.fertec.ui
 
         private void tsmiProducto_Click(object sender, EventArgs e)
         {
-            // Util.AbrirFormulario<tipoDocumentoFrm>(this);
+            Util.AbrirFormulario<productoFrm>(this);
         }
 
         private void tsmiCliente_Click(object sender, EventArgs e)
         {
-            // Util.AbrirFormulario<tipoDocumentoFrm>(this);
+            Util.AbrirFormulario<clienteFrm>(this);
         }
 
         private void tsmiEmpleado_Click(object sender, EventArgs e)
         {
-            // Util.AbrirFormulario<tipoDocumentoFrm>(this);
+            Util.AbrirFormulario<empleadoFrm>(this);
         }
 
         private void tsmiVenta_Click(object sender, EventArgs e)
