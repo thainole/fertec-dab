@@ -33,3 +33,4 @@ C:\Users\omama\OneDrive\Escritorio\fertec-proyecto-final\pe.com.fertec.bal\obj\D
 C:\Users\omama\OneDrive\Escritorio\fertec-proyecto-final\pe.com.fertec.bal\obj\Debug\net10.0\refint\pe.com.fertec.bal.dll
 C:\Users\omama\OneDrive\Escritorio\fertec-proyecto-final\pe.com.fertec.bal\obj\Debug\net10.0\pe.com.fertec.bal.pdb
 C:\Users\omama\OneDrive\Escritorio\fertec-proyecto-final\pe.com.fertec.bal\obj\Debug\net10.0\ref\pe.com.fertec.bal.dll
+C:\Users\thain\Documents\ISIL\2026-1\5447-dab-lab\Fertec\Fertec\pe.com.fertec.bal\obj\Debug\net10.0\pe.com.fertec.bal.sourcelink.json

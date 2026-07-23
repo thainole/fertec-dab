@@ -46,7 +46,6 @@ C:\Users\thain\Documents\ISIL\2026-1\5447-dab-lab\Fertec\Fertec\pe.com.fertec.ui
 C:\Users\thain\Documents\ISIL\2026-1\5447-dab-lab\Fertec\Fertec\pe.com.fertec.ui\bin\Debug\net10.0-windows\pe.com.fertec.bo.pdb
 C:\Users\thain\Documents\ISIL\2026-1\5447-dab-lab\Fertec\Fertec\pe.com.fertec.ui\bin\Debug\net10.0-windows\pe.com.fertec.dal.pdb
 C:\Users\thain\Documents\ISIL\2026-1\5447-dab-lab\Fertec\Fertec\pe.com.fertec.ui\obj\Debug\net10.0-windows\pe.com.fertec.ui.csproj.AssemblyReference.cache
-C:\Users\thain\Documents\ISIL\2026-1\5447-dab-lab\Fertec\Fertec\pe.com.fertec.ui\obj\Debug\net10.0-windows\pe.com.fertec.ui.Form1.resources
 C:\Users\thain\Documents\ISIL\2026-1\5447-dab-lab\Fertec\Fertec\pe.com.fertec.ui\obj\Debug\net10.0-windows\pe.com.fertec.ui.csproj.GenerateResource.cache
 C:\Users\thain\Documents\ISIL\2026-1\5447-dab-lab\Fertec\Fertec\pe.com.fertec.ui\obj\Debug\net10.0-windows\pe.com.fertec.ui.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\thain\Documents\ISIL\2026-1\5447-dab-lab\Fertec\Fertec\pe.com.fertec.ui\obj\Debug\net10.0-windows\pe.com.fertec.ui.AssemblyInfoInputs.cache
@@ -121,3 +120,13 @@ C:\Users\omama\OneDrive\Escritorio\fertec-proyecto-final\pe.com.fertec.ui\obj\De
 C:\Users\omama\OneDrive\Escritorio\fertec-proyecto-final\pe.com.fertec.ui\obj\Debug\net10.0-windows\pe.com.fertec.ui.pdb
 C:\Users\omama\OneDrive\Escritorio\fertec-proyecto-final\pe.com.fertec.ui\obj\Debug\net10.0-windows\pe.com.fertec.ui.genruntimeconfig.cache
 C:\Users\omama\OneDrive\Escritorio\fertec-proyecto-final\pe.com.fertec.ui\obj\Debug\net10.0-windows\ref\pe.com.fertec.ui.dll
+C:\Users\thain\Documents\ISIL\2026-1\5447-dab-lab\Fertec\Fertec\pe.com.fertec.ui\obj\Debug\net10.0-windows\pe.com.fertec.ui.frmingreso.resources
+C:\Users\thain\Documents\ISIL\2026-1\5447-dab-lab\Fertec\Fertec\pe.com.fertec.ui\obj\Debug\net10.0-windows\pe.com.fertec.ui.frmmenuprincipal.resources
+C:\Users\thain\Documents\ISIL\2026-1\5447-dab-lab\Fertec\Fertec\pe.com.fertec.ui\obj\Debug\net10.0-windows\pe.com.fertec.ui.Properties.Resources.resources
+C:\Users\thain\Documents\ISIL\2026-1\5447-dab-lab\Fertec\Fertec\pe.com.fertec.ui\obj\Debug\net10.0-windows\pe.com.fertec.ui.sourcelink.json
+C:\Users\thain\Documents\ISIL\2026-1\5447-dab-lab\Fertec\Fertec\pe.com.fertec.ui\obj\Debug\net10.0-windows\pe.com.fertec.ui.categoriaFrm.resources
+C:\Users\thain\Documents\ISIL\2026-1\5447-dab-lab\Fertec\Fertec\pe.com.fertec.ui\obj\Debug\net10.0-windows\pe.com.fertec.ui.distritoFrm.resources
+C:\Users\thain\Documents\ISIL\2026-1\5447-dab-lab\Fertec\Fertec\pe.com.fertec.ui\obj\Debug\net10.0-windows\pe.com.fertec.ui.marcaFrm.resources
+C:\Users\thain\Documents\ISIL\2026-1\5447-dab-lab\Fertec\Fertec\pe.com.fertec.ui\obj\Debug\net10.0-windows\pe.com.fertec.ui.sexoFrm.resources
+C:\Users\thain\Documents\ISIL\2026-1\5447-dab-lab\Fertec\Fertec\pe.com.fertec.ui\obj\Debug\net10.0-windows\pe.com.fertec.ui.rolFrm.resources
+C:\Users\thain\Documents\ISIL\2026-1\5447-dab-lab\Fertec\Fertec\pe.com.fertec.ui\obj\Debug\net10.0-windows\pe.com.fertec.ui.tipoDocumentoFrm.resources

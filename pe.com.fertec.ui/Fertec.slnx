@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="pe.com.fertec.bal/pe.com.fertec.bal.csproj" />
+  <Project Path="pe.com.fertec.bo/pe.com.fertec.bo.csproj" />
+  <Project Path="pe.com.fertec.dal/pe.com.fertec.dal.csproj" />
+  <Project Path="pe.com.fertec.ui/pe.com.fertec.ui.csproj" />
+</Solution>
